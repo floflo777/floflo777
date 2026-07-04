@@ -8,37 +8,38 @@ by hand.
 
 ### White-hat recoveries
 
-- **HongCoin ICO, ~1,003 ETH unlocked.** A 2016 crowdsale whose refund path had been broken
-  for nine years. I found the unlock, an unchecked overflow in the team's own admin
-  function, proved it end to end on a Foundry mainnet fork, and disclosed it to the original
-  team, who executed it on-chain. No funds taken, no fee.
-  See [hongcoin-recovery](https://github.com/floflo777/hongcoin-recovery).
-- **~19.3 ETH across earlier cases:** a dormant 2018 ICO refund (5.1 ETH) and seven expired
-  Liquality HTLCs returned to their owner (14.2 ETH).
+- **~1,003 ETH** unlocked from the failed 2016 HongCoin ICO, frozen for 9 years. I found the
+  path (an unchecked overflow in the team's own admin function), proved it on a Foundry
+  mainnet fork, and disclosed it to the original team, who executed it on-chain. No funds
+  taken, no fee. See [hongcoin-recovery](https://github.com/floflo777/hongcoin-recovery).
+- **~19.3 ETH** returned in earlier cases: a dormant 2018 ICO refund (5.1 ETH) and 7 expired
+  Liquality HTLCs (14.2 ETH).
 
 ### On-chain puzzles
 
-- **Finlow-Bates book puzzles, 4 solved.** Small BTC rewards with keys hidden in a published
-  blockchain book. The methods ran from repairing a planted BIP39 mnemonic to XOR-ing printed
-  hashes and an English to Italian wordlist localization.
+- **4 Bitcoin key puzzles solved** from Kary Finlow-Bates' book, 0.002 BTC each, 0.008 BTC
+  total, unsolved for roughly 4 years before. Methods: BIP39 mnemonic repair, XOR of printed
+  hashes, English to Italian wordlist localization, and triple-SHA256 of a hidden phrase.
   See [finlow-bates-solutions](https://github.com/floflo777/finlow-bates-solutions).
-- **Teikhos (TeikhosBounty), 735B solved for 0.5 ETH.** Recovered the winning ECDSA public
-  key for one of Johan Nygren's on-chain key-reveal bounties.
+- **0.5 ETH** claimed on Teikhos bounty 735B, by recovering a winning ECDSA public key that
+  had leaked in a failed 2022 attempt's calldata.
+  See [teikhos-735b](https://github.com/floflo777/teikhos-735b).
 
 ### Protocol security
 
-- **Akash BME incentivized testnet, 8 bugs reported.** Critical and High severity: stuck
-  mints, vault, lease and escrow state inconsistencies, oracle config mismatch, each with a
-  reproduction. See [akash-bme-testnet-bugs](https://github.com/floflo777/akash-bme-testnet-bugs).
+- **8 bugs** (Critical and High) reported on the Akash BME incentivized testnet, each with a
+  reproduction: stuck mints, vault, lease and escrow state inconsistencies, and an oracle
+  config mismatch. See [akash-bme-testnet-bugs](https://github.com/floflo777/akash-bme-testnet-bugs).
 - Ongoing differential research on Ethereum execution and consensus clients, and zkVM
   soundness.
 
 ### DeFi and ZK
 
-- **Eclipse, a private lending protocol on Aleo.** A decentralized price oracle (staking,
-  slashing, on-chain median aggregation) plus an over-collateralized USDA vault and a
-  permissionless lending pool, written in Leo. 1st place at the Aleo Hackathon
-  (KRYPTOSPHERE x zSociety, 2025, $100k pool). See [aleo-eclipse](https://github.com/floflo777/aleo-eclipse).
+- **1st place, $70,000** of a $100,000 prize pool at the Aleo Hackathon (KRYPTOSPHERE x
+  zSociety, 2025) for Eclipse, a private lending protocol on Aleo: a decentralized price
+  oracle (staking, slashing, on-chain median aggregation) plus an over-collateralized USDA
+  vault and a permissionless lending pool, written in Leo.
+  See [aleo-eclipse](https://github.com/floflo777/aleo-eclipse).
 - **MBC-20**, an inscription-style token standard and indexer on Base.
   See [mbc20](https://github.com/floflo777/mbc20).
 
