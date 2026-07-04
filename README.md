@@ -1,39 +1,49 @@
-# Florent
+## 0xFlorent
 
-Blockchain developer focused on DeFi protocols, zero-knowledge applications, and quantitative finance.
+Security researcher and DeFi / ZK builder. I recover funds stuck in old contracts,
+solve on-chain puzzles, hunt protocol bugs, and build privacy-preserving DeFi on Aleo.
 
-## Current Focus
+Most of what I do starts from a self-hosted Ethereum node and a lot of reading old
+Solidity by hand.
 
-Building privacy-preserving financial infrastructure on Aleo and developing DeFi applications across multiple chains.
+### White-hat recoveries
 
-## Technical Stack
+- **HongCoin ICO — ~1,003 ETH unlocked.** A 2016 crowdsale whose refund path had been
+  broken for nine years. Found the unlock (an unchecked overflow in the team's own admin
+  function), proved it end-to-end on a Foundry mainnet fork, disclosed it to the original
+  team, who executed it on-chain. No funds taken, no fee. → [hongcoin-recovery](https://github.com/floflo777/hongcoin-recovery)
+- **~19.3 ETH across earlier cases** — a dormant 2018 ICO refund (5.1 ETH) and seven
+  expired Liquality HTLCs returned to their owner (14.2 ETH).
 
-**Blockchain & Smart Contracts**
-- Solidity, Leo (Aleo)
-- Hardhat, Foundry
-- ethers.js, @solana/web3.js
+### On-chain puzzles
 
-**Backend & Systems**
-- Node.js, TypeScript, Python
-- Qiskit (Quantum Computing)
+- **Finlow-Bates book puzzles — 4 solved.** BIP39/hash keys hidden in a published book;
+  methods ranged from XOR of printed hashes to an EN→IT wordlist translation trick.
+- **Teikhos bounty — 0.5 ETH claimed.** ECDSA public-key-reveal bounty (Johan Nygren's
+  TeikhosBounty family).
 
-**Frontend**
-- React, Vite, TailwindCSS
+### Protocol security
 
-## Featured Projects
+- **Akash BME incentivized testnet — 8 bugs reported** (Critical/High: stuck mints,
+  vault/lease/escrow state inconsistencies, oracle config mismatch), each with a
+  reproduction. → [akash-bme-testnet-bugs](https://github.com/floflo777/akash-bme-testnet-bugs)
+- Ongoing differential research on Ethereum execution/consensus clients and zkVM
+  soundness.
 
-### [Aleo Eclipse](https://github.com/EclipseAleo/aleo-eclipse)
-Private lending protocol with on-chain oracle on Aleo. Features vault management, treasury operations, and governance token mechanics with validator slashing for oracle integrity.
+### DeFi & ZK
 
-### [Certify Solana](https://github.com/floflo777/certify-solana)
-On-chain document certification using Solana's Memo program. Creates immutable, timestamped proof of existence for files and text.
+- **Eclipse — private lending protocol on Aleo.** Decentralized price oracle (staking,
+  slashing, on-chain median aggregation) plus an over-collateralized USDA vault and a
+  permissionless lending pool, in Leo. **1st place, Aleo Hackathon (KRYPTOSPHERE ×
+  zSociety, 2025 — $100k pool).** → [aleo-eclipse](https://github.com/floflo777/aleo-eclipse)
+- **MBC-20** — inscription-style token standard and indexer on Base. → [mbc20](https://github.com/floflo777/mbc20)
 
-### [Quantum Option Pricing](https://github.com/floflo777/quantum)
-Implementation of Quantum Amplitude Estimation for European call option pricing. Demonstrates quantum advantage in financial derivatives valuation.
+### Approach
 
-### [MonadFlip](https://github.com/floflo777/monadflip)
-Peer-to-peer coin flip game on Monad with referral system, player statistics, and 3D animations.
+I use AI (Claude Code) to accelerate the search and clustering pipeline, not to read the
+contracts — automated tooling tends to give up on exactly the contracts worth a closer
+look. The judgment stays manual.
 
-## Contact
+### Contact
 
-Open to collaborations on DeFi, ZK applications, and blockchain infrastructure projects.
+X [@0xFlorent_](https://twitter.com/0xFlorent_) · ENS `0xflorent.eth`
