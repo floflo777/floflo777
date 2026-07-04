@@ -17,10 +17,11 @@ Solidity by hand.
 
 ### On-chain puzzles
 
-- **Finlow-Bates book puzzles — 4 solved.** BIP39/hash keys hidden in a published book;
-  methods ranged from XOR of printed hashes to an EN→IT wordlist translation trick.
-- **Teikhos bounty — 0.5 ETH claimed.** ECDSA public-key-reveal bounty (Johan Nygren's
-  TeikhosBounty family).
+- **Finlow-Bates book puzzles — 4 solved.** Small BTC rewards with keys hidden in a
+  published blockchain book; methods ranged from repairing a planted BIP39 mnemonic to
+  XOR-ing printed hashes and an English→Italian wordlist localization.
+- **Teikhos (TeikhosBounty) — 735B key-reveal solved.** Recovered the winning ECDSA
+  public key for one of Johan Nygren's on-chain key-reveal bounties.
 
 ### Protocol security
 
