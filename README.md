@@ -1,7 +1,5 @@
 ## 0xFlorent
 
-Punk#3315 | Builder and explorer 🤠
-
 Security researcher and DeFi / ZK builder. I recover funds stuck in old contracts, solve
 on-chain puzzles, hunt protocol bugs, and build privacy-preserving DeFi on Aleo.
 
